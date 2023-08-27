@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Protfolio</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Phudu:wght@600&family=Poppins:ital,wght@1,100&family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
+</head>
+<style>
+    .removeclass{
+        display: none;
+    }
+</style>
+
+  
+<body >
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="" width="200px" id="logo">
+                <ul id="sidemenu">
+                    <li>
+                        <a href="#header">Home</a> </li>
+                        <li>  <a href="#about">About</a> </li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact me</a>
+                            
+                            
+                        </li>
+                        <i class="fa-solid fa-xmark" onclick="closemen()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmen()"></i>
+            </nav>
+            <div class="header-text" id="back">
+                <h1>Hi, I'm   <span class="typing" ></span> 
+                    
+            </div>
+        </div>
+        
+    </div>
+    <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                 <!--this is where to resume  -->
+                 <img src="images/profile-alt.jpg" alt="profileimage" srcset="" width="400px" style="padding: 20px 40px;">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>
+    
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sed quod quisquam molestiae dolor dolore, porro eligendi iste ipsam, quas illo iure dolorum doloribus rerum magnam aliquid debitis exercitationem in?
+                       </p>
+
+                       
+                       <div class="tab-titles">
+                           <p class="tab-links active-link" onclick="opentab('skills')">Skill</p>
+                           <p class="tab-links" onclick="opentab('certificates')">Certifications</p>
+                           <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        
+                        <div class="tab-content active-tab" id="skills">
+                          
+                            <ul>
+                                <li><span>Problem Solving</span></li>
+                                <li><span>Website desinging</span></li>
+                                <li><span>Data Structure</span></li>
+                                <li><Span>Critical Thinking</Span></li>
+                            </ul>
+                        </div>
+                        <div class="tab-content " id="certificates">
+                           
+                            <ul>
+                                <li><a href="https://www.guvi.in/verify-certificate?id=qlg2r964L0v2161k0T&course=ai_for_in_en" target="_blank">AI For India 2.0</a></li>
+                                <li><a href="https://www.guvi.in/verify-certificate?id=oeIB0C94a203657142&course=pythonEng" target="_blank">Python </a></li>
+                                <li><a href="https://www.kaggle.com/learn/certification/alaguaravind/python">Pyhton("kaggle")</a></li>
+                            </ul>
+                        </div>
+                        <div class="tab-content " id="education">
+                         
+                            <ul>
+                                <li>
+                                    <span>UG(BE-CSE)</span> <br>
+                                    Karpagam college of Engineering ,Coimbatore  &nbsp;
+                                    2021-Present <br>
+                                    Current-CGPA- <b style="color: rgb(58, 154, 67);">8.02</b>
+
+                                </li>
+                                <li>
+                                    <span>SSLC</span> <br>
+                                    Army public School Faridkot Cantt,Punjab  &nbsp;
+                                    2019 <br>
+                                    Percentage: <i style="color: rgb(58, 154, 67)"><b>77.2%</b></i>
+
+                                </li>
+                                <li>
+                                    <span>HSLC(Non-Medical)</span> <br>
+                                    Kendriya Vidyalaya Faridkot ,Punjab &nbsp;
+                                    2021 <br>
+                                    Percentage: <i style="color: rgb(58, 154, 67)"><b>84%</b></i>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Projects -->
+<div id="projects">
+    <div class="container">
+        <h1 class="subtitle">My projects</h1>
+        <div class="projects-list">
+            <div>
+                <p><i class="fa-solid fa-cart-shopping"></i></p>
+                <h1>MC-Mart</h1> <br>
+                <p>
+                    MC-Mart is an exciting online shopping project that aims to revolutionize the way users experience e-commerce. As a student-led initiative, our goal is to create a seamless platform that offers a user-friendly interface, a wide range of products, and efficient shopping features. This project involves developing responsive web designs, integrating APIs, and ensuring a smooth end-to-end shopping process. Join us to contribute to the future of online retail.
+                </p>
+                <a href="https://github.com/AlaguAravindA/MC-mart" target="_blank">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-pagelines"></i>
+            <h1>Alpha-Tree Climber</h1> <br>
+            <p>
+
+            </p>
+            
+            <p>
+                
+ Designed a compact and innovative device for efficiently climbing palm trees, catering to the needs of small-scale farmers.
+ Led a team of 4 members to develop this cutting-edge solution.
+ Received recognition from Bharathiar University for the ingenuity of the compact design.
+ Currently engaged in prototype testing, focusing on minimizing wind resistance and effectively managing weight.
+            </p>
+            <a href="images/Alpha climber.pdf" target="learnmore.html">Learn more</a>
+           
+        </div>
+        <div>
+            <i class="fa-solid fa-right-to-bracket"></i>
+            <h1>A satic login page</h1> <br>
+            <p>
+                
+            </p>
+        
+        <p>
+             Developed a comprehensive website highlighting interesting car facts, utilizing various aspects of HTML and CSS.
+Implemented JavaScript to enhance user experience through data validation and ensure a responsive webpage design.
+ Created a functional calculator and a dynamic to-do list, leveraging the same set of technologies.
+ Incorporated Bootstrap framework to enhance the overall aesthetics and user interface of the website.
+        </p>
+        <a href="https://github.com/AlaguAravindA/Mern" target="_blank">Learn more</a>
+    </div>
+
+    </div>
+</div>
+<!-- Contact -->
+<div id="contact" style="margin-top: 100px;">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact me</h1>
+                <p> <i class="fa-solid fa-at"></i>aalaguraj748@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i>+91 7347201040</p>
+                
+                <div class="socialicons">
+                    <a href="https://www.instagram.com/alaguaravind_" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/alagu-aravind-a-08a623260" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" target=""><i class="fa-brands fa-facebook"></i></a>
+
+
+
+                </div>
+                <a href="images/717821p105-AlaguAravind.pdf" class="btn" download>Download CV</a>
+
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input  type="text" name="Name" placeholder="Name*" required />
+                    <input type="email" name="Email" placeholder="Email*" required/>
+                    <textarea name="Meassage" rows="6" placeholder="Type your Message"></textarea>
+                    <button type="submit" value="Submit Form" class="btn btn2">Send message</button>
+                    </form>
+                    <br>
+                    <span id="msg">  </span>
+                   
+
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+
+<script>
+    // Typing effect
+    
+    var typed = new Typed(".typing",{
+    strings:["Alagu Aravind","a Student!!"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+});
+
+let tablinks=document.getElementsByClassName("tab-links");
+let tabcontent=document.getElementsByClassName("tab-content");
+
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+
+    }
+    for(tabcontents of tabcontent){
+        tabcontents.classList.remove("active-tab");
+
+    }
+
+    event.currentTarget.classList.add("active-link")
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+
+
+var sidemen= document.getElementById("sidemenu");
+var bright= document.getElementById("back");
+var bright1= document.getElementById("logo");
+var bright2= document.getElementById("header");
+
+
+function openmen(){
+    sidemen.style.right=0
+   bright.style.filter="brightness(20%)";   
+   bright1.style.filter="brightness(20%)";   
+     
+   
+}
+function closemen(){
+    sidemen.style.right= "-200px"
+    bright.style.filter="brightness(100%)";  
+    bright1.style.filter="brightness(100%)";  
+      
+    
+}
+
+
+
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzrn4xO1f-97VlF85oxQkGd6iobV1Khfp1-Crfnyt6rJk9PI85W7USTNNA9BWSwSXzavw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+           
+            msg.innerHTML="Message has been sent js";
+            console.log("outside function")
+            setTimeout(function(){
+                msg.innerHTML=" ";
+                
+            },5000);
+            form.reset();
+            
+         
+        })
+        .catch(error => {
+            form.reset();
+
+        })
+    })
+  </script>
+<script src="https://kit.fontawesome.com/91628c22f2.js" crossorigin="anonymous"></script>
+</body>
+</html>
