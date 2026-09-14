@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name — Portfolio</title>
+<meta name="description" content="Engineer working across AI/GenAI systems and backend infrastructure.">
+
+<!-- Two typefaces, one family tree: IBM Plex Sans carries Recruiter Mode,
+     IBM Plex Mono carries Developer Mode. Loaded once so the switch
+     between modes is instant with no flash of unstyled text. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-mode="recruiter">
+
+  <!-- ============================================================
+       BOOT OVERLAY — shown only during the Recruiter → Developer
+       transition. Hidden the rest of the time (aria-hidden + CSS).
+       ============================================================ -->
+  <div class="boot-overlay" id="bootOverlay" aria-hidden="true">
+    <div class="boot-lines" id="bootLines"></div>
+  </div>
+
+  <!-- ============================================================
+       HEADER / NAV — identical markup for both modes; CSS + the
+       content-render step decide how the text reads.
+       ============================================================ -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#top" class="brand" id="brandName">Your Name</a>
+
+      <nav class="site-nav" id="siteNav" aria-label="Section navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button type="button" class="mode-toggle" id="modeToggle" aria-pressed="false">
+        <span class="mode-toggle-icon" id="modeToggleIcon" aria-hidden="true"></span>
+        <span class="mode-toggle-label" id="modeToggleLabel">View as Developer</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="hero">
+      <!-- <p class="hero-eyebrow" id="heroEyebrow"></p> -->
+      <h1 class="hero-name" id="heroName"></h1>
+      <p class="hero-role" id="heroRole"></p>
+      <!-- Developer Mode only: a small neofetch-style info panel.
+           Left empty and hidden in Recruiter Mode. -->
+      <dl class="dev-info" id="devInfo" hidden></dl>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section" id="about">
+      <h2 class="section-title" id="aboutTitle"></h2>
+      <p class="about-body" id="aboutBody"></p>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="section" id="skills">
+      <h2 class="section-title" id="skillsTitle"></h2>
+      <div class="skills-groups" id="skillsGroups"></div>
+    </section>
+
+    <!-- ================= EXPERIENCE ================= -->
+    <section class="section" id="experience">
+      <h2 class="section-title" id="experienceTitle"></h2>
+      <div id="experienceList"></div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="section" id="projects">
+      <h2 class="section-title" id="projectsTitle"></h2>
+
+      <div class="project-group">
+        <h3 class="project-group-title" id="groupAiTitle"></h3>
+        <div class="project-cards" id="groupAiCards"></div>
+      </div>
+
+      <div class="project-group">
+        <h3 class="project-group-title" id="groupInfraTitle"></h3>
+        <div class="project-cards" id="groupInfraCards"></div>
+      </div>
+    </section>
+
+    <!-- ================= EDUCATION ================= -->
+    <section class="section" id="education">
+      <h2 class="section-title" id="educationTitle"></h2>
+      <div id="educationList"></div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section" id="contact">
+      <h2 class="section-title" id="contactTitle"></h2>
+      <p class="contact-lead" id="contactLead"></p>
+
+      <div class="contact-grid">
+        <ul class="contact-links" id="contactLinks"></ul>
+
+        <!-- Netlify Forms: works with zero backend when deployed on
+             Netlify. If the page is served anywhere else, script.js
+             swaps this out for a plain mailto: link at load time. -->
+        <!-- <form class="contact-form"
+              id="contactForm"
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact">
+          <p class="hp-field">
+            <label>Don't fill this out if you're human: <input name="bot-field"></label>
+          </p>
+
+          <label class="field">
+            <span>Name</span>
+            <input type="text" name="name" required>
+          </label>
+
+          <label class="field">
+            <span>Email</span>
+            <input type="email" name="email" required>
+          </label>
+
+          <label class="field">
+            <span>Message</span>
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+
+          <button type="submit" class="submit-btn">Send message</button>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </section> -->
+
+  </main>
+
+  <footer class="site-footer">
+    <p id="footerNote"></p>
+  </footer>
+
+<script src="script.js"></script>
+<!-- <canvas id="mouseTrail"></canvas> -->
+</body>
+</html>
